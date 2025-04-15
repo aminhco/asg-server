@@ -1,0 +1,5 @@
+cors:
+  allowOrigins:
+    - "*"
+metrics:
+  enabled: true
