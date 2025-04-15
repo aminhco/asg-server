@@ -2,8 +2,8 @@ services:
   backend:
     image: capcom6/sms-gateway
     build:
-      context: ../..
-      dockerfile: ./build/package/Dockerfile
+      context: .
+      dockerfile: build/package/Dockerfile
       args:
         - APP=sms-gateway
     environment:
