@@ -25,23 +25,3 @@ services:
       db:
         condition: service_healthy
 
-  db:
-    image: mariadb:lts
-    environment:
-      - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=sms
-      - MYSQL_USER=sms
-      - MYSQL_PASSWORD=sms
-      - MARIADB_AUTO_UPGRADE=1
-    volumes:
-      - mariadb-data:/var/lib/mysql
-    restart: 'unless-stopped'
-    healthcheck:
-      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
-      start_period: 10s
-      interval: 10s
-      timeout: 5s
-      retries: 3
-
-volumes:
-  mariadb-data:
