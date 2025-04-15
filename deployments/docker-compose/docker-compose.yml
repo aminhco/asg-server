@@ -17,7 +17,7 @@ services:
       - DATABASE__PASSWORD=sms
       - DATABASE__DATABASE=sms
     ports:
-      - "3000:3000"
+      - "3010:3000"
     volumes:
       - ../../configs/config.yml:/app/config.yml:ro
     restart: 'unless-stopped'
