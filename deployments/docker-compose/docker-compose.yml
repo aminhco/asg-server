@@ -9,7 +9,7 @@ services:
     environment:
       - DEBUG=
       - CONFIG_PATH=config.yml
-      - GOOSE_DBSTRING=sms:sms@tcp(db:3306)/sms
+      - GOOSE_DBSTRING=root:AEPMa17pu84Va7EPxeNOTKLGkQTvAvfQbHNasjFYAgzU1gl7Hyjxbt9y5ZTX5897@tcp(wkoo0ggowk080cg04g0kw8kw:3306)/asg
       - HTTP__LISTEN=0.0.0.0:3000
       - DATABASE__HOST=db
       - DATABASE__PORT=3306
